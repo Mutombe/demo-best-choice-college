@@ -133,7 +133,7 @@ function NavLink({ to, active, children }) {
       {children}
       {/* Animated underline */}
       <span
-        className={`absolute bottom-0 left-3 right-3 h-[2px] bg-gold-400 rounded-full transition-transform duration-300 origin-left ${
+        className={`absolute bottom-0 left-3 right-3 h-[2px] bg-gold-400 rounded-none transition-transform duration-300 origin-left ${
           active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
         }`}
       />
@@ -242,7 +242,7 @@ function Navbar({ onSearchOpen }) {
                   loading="eager"
                 />
               ) : (
-                <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-11 lg:h-11 bg-gold-500 rounded-xl flex items-center justify-center group-hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-11 lg:h-11 bg-gold-500 rounded-none flex items-center justify-center group-hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20">
                   <HardHat size={20} weight="fill" className="text-white sm:hidden" />
                   <HardHat size={22} weight="fill" className="text-white hidden sm:block lg:hidden" />
                   <HardHat size={24} weight="fill" className="text-white hidden lg:block" />
@@ -286,7 +286,7 @@ function Navbar({ onSearchOpen }) {
                       />
                       {/* Underline for dropdown parent */}
                       <span
-                        className={`absolute bottom-0 left-3 right-3 h-[2px] bg-gold-400 rounded-full transition-transform duration-300 origin-left ${
+                        className={`absolute bottom-0 left-3 right-3 h-[2px] bg-gold-400 rounded-none transition-transform duration-300 origin-left ${
                           link.children.some((c) => isActive(c.path))
                             ? 'scale-x-100'
                             : 'scale-x-0 group-hover:scale-x-100'
@@ -300,7 +300,7 @@ function Navbar({ onSearchOpen }) {
                           animate={{ opacity: 1, y: 0, scale: 1 }}
                           exit={{ opacity: 0, y: 10, scale: 0.97 }}
                           transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                          className="absolute top-full left-0 mt-2 w-52 bg-navy-900/95 backdrop-blur-2xl rounded-xl border border-white/10 shadow-2xl shadow-black/30 overflow-hidden"
+                          className="absolute top-full left-0 mt-2 w-52 bg-navy-900/95 backdrop-blur-2xl rounded-none border border-white/10 shadow-2xl shadow-black/30 overflow-hidden"
                         >
                           {link.children.map((child) => (
                             <Link
@@ -332,7 +332,7 @@ function Navbar({ onSearchOpen }) {
               {/* Search */}
               <button
                 onClick={onSearchOpen}
-                className="text-white/60 hover:text-white p-2 rounded-lg hover:bg-white/5 transition-colors"
+                className="text-white/60 hover:text-white p-2 rounded-none hover:bg-white/5 transition-colors"
                 aria-label="Search"
               >
                 <MagnifyingGlass size={18} className="sm:hidden" />
@@ -354,7 +354,7 @@ function Navbar({ onSearchOpen }) {
               {/* CTA — Get Free Quote */}
               <Link
                 to="/contact"
-                className="hidden sm:inline-flex items-center bg-gold-500 hover:bg-gold-600 text-navy-950 px-5 lg:px-6 py-2 lg:py-2.5 rounded-full font-bold text-xs sm:text-sm tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/25 hover:-translate-y-px active:translate-y-0"
+                className="hidden sm:inline-flex items-center bg-gold-500 hover:bg-gold-600 text-navy-950 px-5 lg:px-6 py-2 lg:py-2.5 rounded-none font-bold text-xs sm:text-sm tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/25 hover:-translate-y-px active:translate-y-0"
               >
                 Get Free Quote
               </Link>
@@ -421,11 +421,11 @@ function Navbar({ onSearchOpen }) {
                     setMobileOpen(false);
                     onSearchOpen?.();
                   }}
-                  className="flex items-center gap-4 w-full text-white/40 px-2 py-3 rounded-xl hover:bg-white/5 mb-4"
+                  className="flex items-center gap-4 w-full text-white/40 px-2 py-3 rounded-none hover:bg-white/5 mb-4"
                 >
                   <MagnifyingGlass size={20} />
                   <span className="text-base">Search...</span>
-                  <kbd className="ml-auto text-xs text-white/20 bg-white/5 px-2 py-1 rounded-md font-mono">
+                  <kbd className="ml-auto text-xs text-white/20 bg-white/5 px-2 py-1 rounded-none font-mono">
                     Ctrl+K
                   </kbd>
                 </motion.button>
@@ -517,7 +517,7 @@ function Navbar({ onSearchOpen }) {
                 <Link
                   to="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full bg-gold-500 hover:bg-gold-600 text-navy-950 py-4 rounded-2xl font-bold text-lg tracking-wide transition-all"
+                  className="flex items-center justify-center gap-2 w-full bg-gold-500 hover:bg-gold-600 text-navy-950 py-4 rounded-none font-bold text-lg tracking-wide transition-all"
                 >
                   Get Free Quote
                 </Link>
@@ -528,14 +528,14 @@ function Navbar({ onSearchOpen }) {
                     href={`https://wa.me/${business.whatsappNumber}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 bg-green-600/90 hover:bg-green-500 text-white py-3.5 rounded-xl text-sm font-semibold transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 bg-green-600/90 hover:bg-green-500 text-white py-3.5 rounded-none text-sm font-semibold transition-colors"
                   >
                     <WhatsappLogo size={20} weight="fill" />
                     WhatsApp
                   </a>
                   <a
                     href={`tel:${business.phoneRaw || business.phone}`}
-                    className="flex-1 flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white py-3.5 rounded-xl text-sm font-semibold transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white py-3.5 rounded-none text-sm font-semibold transition-colors"
                   >
                     <Phone size={20} weight="bold" />
                     Call Us

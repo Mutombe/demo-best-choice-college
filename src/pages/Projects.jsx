@@ -51,7 +51,7 @@ function Projects() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all ${
+                  className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-none text-xs sm:text-sm font-medium whitespace-nowrap transition-all ${
                     activeCategory === cat
                       ? 'bg-navy-900 text-white shadow-lg'
                       : 'bg-earth-50 text-steel-600 hover:bg-earth-100'
@@ -80,7 +80,7 @@ function Projects() {
                 >
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className="group block w-full text-left rounded-2xl overflow-hidden bg-earth-50 border border-earth-100 hover:shadow-xl transition-shadow"
+                    className="group block w-full text-left rounded-none overflow-hidden bg-earth-50 border border-earth-100 hover:shadow-xl transition-shadow"
                   >
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
@@ -90,7 +90,7 @@ function Projects() {
                         loading="lazy"
                       />
                       <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
-                        <span className="bg-gold-500 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                        <span className="bg-gold-500 text-white text-xs font-semibold px-3 py-1.5 rounded-none">
                           {project.category}
                         </span>
                       </div>
@@ -132,7 +132,7 @@ function Projects() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+              className="bg-white rounded-none max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative">
@@ -143,13 +143,13 @@ function Projects() {
                 />
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+                  className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-none flex items-center justify-center transition-colors"
                   aria-label="Close project details"
                 >
                   <X size={20} />
                 </button>
                 <div className="absolute bottom-4 left-4">
-                  <span className="bg-gold-500 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                  <span className="bg-gold-500 text-white text-sm font-semibold px-4 py-2 rounded-none">
                     {selectedProject.category}
                   </span>
                 </div>
@@ -179,7 +179,7 @@ function Projects() {
                     {selectedProject.services.map((s) => (
                       <span
                         key={s}
-                        className="bg-earth-50 text-steel-600 text-sm px-3 py-1.5 rounded-lg border border-earth-100"
+                        className="bg-earth-50 text-steel-600 text-sm px-3 py-1.5 rounded-none border border-earth-100"
                       >
                         {s}
                       </span>

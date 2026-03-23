@@ -64,7 +64,7 @@ function Reviews() {
       {/* ── Social Proof Banner ── */}
       <section className="relative -mt-6 z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionReveal>
-          <div className="bg-navy-900 rounded-2xl px-6 sm:px-10 py-5 sm:py-6 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-center shadow-2xl shadow-navy-950/30">
+          <div className="bg-navy-900 rounded-none px-6 sm:px-10 py-5 sm:py-6 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-center shadow-2xl shadow-navy-950/30">
             <div className="flex items-center gap-2">
               <span className="text-2xl sm:text-3xl font-bold text-gold-400">
                 {business.rating}
@@ -104,7 +104,7 @@ function Reviews() {
         <section className="section-padding bg-white">
           <div className="max-w-4xl mx-auto">
             <SectionReveal>
-              <div className="relative bg-gradient-to-br from-earth-50 to-white rounded-3xl p-8 sm:p-10 md:p-14 border border-earth-100 shadow-xl shadow-black/5">
+              <div className="relative bg-gradient-to-br from-earth-50 to-white rounded-none p-8 sm:p-10 md:p-14 border border-earth-100 shadow-xl shadow-black/5">
                 {/* Decorative oversized quotes */}
                 <div className="absolute top-6 left-6 sm:top-8 sm:left-8">
                   <Quotes
@@ -122,7 +122,7 @@ function Reviews() {
                 </div>
 
                 {/* Gold accent line */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent rounded-full" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent rounded-none" />
 
                 <div className="relative text-center">
                   {/* Stars */}
@@ -148,7 +148,7 @@ function Reviews() {
 
                   {/* Author */}
                   <div className="flex items-center justify-center gap-4">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden ring-2 ring-gold-500/20 ring-offset-2">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-none overflow-hidden ring-2 ring-gold-500/20 ring-offset-2">
                       {featuredReview.avatar ? (
                         <img
                           src={featuredReview.avatar}
@@ -172,7 +172,7 @@ function Reviews() {
                       </p>
                     </div>
                     {featuredReview.project && (
-                      <span className="hidden sm:inline-block text-xs text-gold-600 bg-gold-50 px-3 py-1.5 rounded-full font-semibold border border-gold-100 ml-2">
+                      <span className="hidden sm:inline-block text-xs text-gold-600 bg-gold-50 px-3 py-1.5 rounded-none font-semibold border border-gold-100 ml-2">
                         {featuredReview.project}
                       </span>
                     )}
@@ -187,7 +187,7 @@ function Reviews() {
       {/* ── Rating Breakdown ── */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <SectionReveal>
-          <div className="bg-white rounded-2xl shadow-xl shadow-black/5 border border-earth-100 p-6 sm:p-8 md:p-10">
+          <div className="bg-white rounded-none shadow-xl shadow-black/5 border border-earth-100 p-6 sm:p-8 md:p-10">
             <div className="grid sm:grid-cols-2 gap-8 sm:gap-10 items-center">
               <div className="text-center sm:text-left">
                 <div className="text-5xl sm:text-6xl font-bold text-navy-900 mb-2">
@@ -231,7 +231,7 @@ function Reviews() {
                       <span className="text-sm text-steel-500 w-12 font-medium">
                         {item.stars} star
                       </span>
-                      <div className="flex-1 h-3 bg-earth-100 rounded-full overflow-hidden relative">
+                      <div className="flex-1 h-3 bg-earth-100 rounded-none overflow-hidden relative">
                         <motion.div
                           initial={{ width: 0 }}
                           whileInView={{
@@ -239,7 +239,7 @@ function Reviews() {
                           }}
                           viewport={{ once: true }}
                           transition={{ duration: 1, delay: 0.3 }}
-                          className="h-full bg-gradient-to-r from-gold-400 to-gold-500 rounded-full relative"
+                          className="h-full bg-gradient-to-r from-gold-400 to-gold-500 rounded-none relative"
                           style={{
                             boxShadow:
                               percentage > 0
@@ -285,7 +285,7 @@ function Reviews() {
                   transition={{ duration: 0.4, delay: (index % 6) * 0.06 }}
                   layout
                 >
-                  <div className="bg-white rounded-2xl p-5 sm:p-6 border border-earth-100 h-full flex flex-col hover:shadow-lg hover:border-earth-200 transition-all duration-300 group">
+                  <div className="bg-white rounded-none p-5 sm:p-6 border border-earth-100 h-full flex flex-col hover:shadow-lg hover:border-earth-200 transition-all duration-300 group">
                     {/* Header: Stars + Verified Badge */}
                     <div className="flex items-center justify-between mb-1">
                       <div className="flex items-center gap-1">
@@ -330,7 +330,7 @@ function Reviews() {
                     <div className="mt-4 sm:mt-6 pt-4 border-t border-earth-100">
                       <div className="flex items-center justify-between gap-2">
                         <div className="flex items-center gap-3 min-w-0">
-                          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden shrink-0 ring-2 ring-earth-100">
+                          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-none overflow-hidden shrink-0 ring-2 ring-earth-100">
                             {review.avatar ? (
                               <img
                                 src={review.avatar}
@@ -354,7 +354,7 @@ function Reviews() {
                             </p>
                           </div>
                         </div>
-                        <span className="text-xs text-gold-600 bg-gold-50 px-2.5 py-1 rounded-full whitespace-nowrap shrink-0 font-semibold border border-gold-100">
+                        <span className="text-xs text-gold-600 bg-gold-50 px-2.5 py-1 rounded-none whitespace-nowrap shrink-0 font-semibold border border-gold-100">
                           {review.project}
                         </span>
                       </div>
@@ -371,7 +371,7 @@ function Reviews() {
               <div className="text-center mt-10 sm:mt-12">
                 <button
                   onClick={() => setShowAll(!showAll)}
-                  className="inline-flex items-center gap-2 bg-white border-2 border-navy-900 text-navy-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 text-sm sm:text-base"
+                  className="inline-flex items-center gap-2 bg-white border-2 border-navy-900 text-navy-900 px-6 sm:px-8 py-3 rounded-none font-semibold transition-all duration-300 hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 text-sm sm:text-base"
                 >
                   {showAll ? 'Show Less' : `Show All ${remainingReviews.length} Reviews`}
                   <CaretDown

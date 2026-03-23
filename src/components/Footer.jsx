@@ -61,11 +61,11 @@ function Footer() {
         />
 
         {/* Soft radial glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gold-500/[0.06] rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gold-500/[0.06] rounded-none blur-[120px] pointer-events-none" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
           {/* Overline badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-none bg-gold-500/10 border border-gold-500/20 mb-6">
             <PaperPlaneTilt size={14} weight="fill" className="text-gold-400" />
             <span className="text-gold-400 text-xs font-semibold uppercase tracking-widest">
               Stay in the Loop
@@ -86,7 +86,7 @@ function Footer() {
             onSubmit={handleSubscribe}
             className="relative max-w-lg mx-auto"
           >
-            <div className="relative flex items-center bg-white/[0.05] border border-white/10 backdrop-blur-sm rounded-full p-1.5 focus-within:border-gold-500/40 transition-colors duration-300">
+            <div className="relative flex items-center bg-white/[0.05] border border-white/10 backdrop-blur-sm rounded-none p-1.5 focus-within:border-gold-500/40 transition-colors duration-300">
               <Envelope
                 size={18}
                 className="text-white/30 ml-4 mr-2 shrink-0"
@@ -101,7 +101,7 @@ function Footer() {
               />
               <button
                 type="submit"
-                className="shrink-0 bg-gold-500 hover:bg-gold-400 text-white text-sm font-semibold px-5 sm:px-6 py-2.5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/25 flex items-center gap-2"
+                className="shrink-0 bg-gold-500 hover:bg-gold-400 text-white text-sm font-semibold px-5 sm:px-6 py-2.5 rounded-none transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/25 flex items-center gap-2"
               >
                 <span className="hidden sm:inline">Get Free Assessment</span>
                 <span className="sm:hidden">Subscribe</span>
@@ -170,7 +170,7 @@ function Footer() {
                     loading="lazy"
                   />
                 ) : (
-                  <div className="w-11 h-11 bg-gradient-to-br from-gold-400 to-gold-600 rounded-xl flex items-center justify-center shadow-lg shadow-gold-500/20 group-hover:shadow-gold-500/30 transition-shadow">
+                  <div className="w-11 h-11 bg-gradient-to-br from-gold-400 to-gold-600 rounded-none flex items-center justify-center shadow-lg shadow-gold-500/20 group-hover:shadow-gold-500/30 transition-shadow">
                     <HardHat size={22} weight="fill" className="text-white" />
                   </div>
                 )}
@@ -215,7 +215,7 @@ function Footer() {
                       key={label}
                       href={href}
                       aria-label={label}
-                      className="w-12 h-12 rounded-full bg-white/[0.04] ring-1 ring-white/10 hover:bg-gold-500 hover:ring-gold-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-gold-500/20"
+                      className="w-12 h-12 rounded-none bg-white/[0.04] ring-1 ring-white/10 hover:bg-gold-500 hover:ring-gold-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-gold-500/20"
                     >
                       <Icon size={20} weight="fill" />
                     </a>
@@ -226,7 +226,7 @@ function Footer() {
             {/* ── Quick Links ── */}
             <div className="lg:col-span-2">
               <div>
-                <span className="block w-8 h-0.5 bg-gold-500 rounded-full mb-3" />
+                <span className="block w-8 h-0.5 bg-gold-500 rounded-none mb-3" />
                 <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">
                   Quick Links
                 </h4>
@@ -255,7 +255,7 @@ function Footer() {
             {/* ── Services ── */}
             <div className="lg:col-span-3">
               <div>
-                <span className="block w-8 h-0.5 bg-gold-500 rounded-full mb-3" />
+                <span className="block w-8 h-0.5 bg-gold-500 rounded-none mb-3" />
                 <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">
                   Our Services
                 </h4>
@@ -284,14 +284,14 @@ function Footer() {
             {/* ── Contact Info ── */}
             <div className="lg:col-span-3">
               <div>
-                <span className="block w-8 h-0.5 bg-gold-500 rounded-full mb-3" />
+                <span className="block w-8 h-0.5 bg-gold-500 rounded-none mb-3" />
                 <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">
                   Contact Us
                 </h4>
               </div>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-sm group">
-                  <div className="w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-gold-500/10 transition-colors">
+                  <div className="w-9 h-9 rounded-none bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-gold-500/10 transition-colors">
                     <MapPin size={16} className="text-gold-500" />
                   </div>
                   <span className="text-white/50 pt-1.5 leading-snug">
@@ -303,7 +303,7 @@ function Footer() {
                     href={`tel:${business.phoneRaw}`}
                     className="flex gap-3 text-sm text-white/50 hover:text-gold-400 transition-colors group"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-gold-500/10 transition-colors">
+                    <div className="w-9 h-9 rounded-none bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-gold-500/10 transition-colors">
                       <Phone size={16} className="text-gold-500" />
                     </div>
                     <span className="pt-2">{business.phone}</span>
@@ -314,7 +314,7 @@ function Footer() {
                     href={`mailto:${business.email}`}
                     className="flex gap-3 text-sm text-white/50 hover:text-gold-400 transition-colors group"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-gold-500/10 transition-colors">
+                    <div className="w-9 h-9 rounded-none bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-gold-500/10 transition-colors">
                       <Envelope size={16} className="text-gold-500" />
                     </div>
                     <span className="pt-2 break-all">{business.email}</span>
@@ -327,14 +327,14 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="flex gap-3 text-sm text-white/50 hover:text-green-400 transition-colors group"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-green-500/10 transition-colors">
+                    <div className="w-9 h-9 rounded-none bg-white/[0.04] flex items-center justify-center shrink-0 group-hover:bg-green-500/10 transition-colors">
                       <WhatsappLogo size={16} className="text-green-500" />
                     </div>
                     <span className="pt-2">WhatsApp Us</span>
                   </a>
                 </li>
                 <li className="flex gap-3 text-sm">
-                  <div className="w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-9 h-9 rounded-none bg-white/[0.04] flex items-center justify-center shrink-0 mt-0.5">
                     <Clock size={16} className="text-gold-500" />
                   </div>
                   <div className="text-white/50 pt-1.5 leading-snug">
@@ -361,11 +361,11 @@ function Footer() {
 
               {/* Trust badges */}
               <div className="flex items-center gap-4 flex-wrap justify-center">
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] ring-1 ring-white/[0.06] text-white/40 text-xs">
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-none bg-white/[0.04] ring-1 ring-white/[0.06] text-white/40 text-xs">
                   <ShieldCheck size={14} weight="fill" className="text-gold-500/70" />
                   <span>Licensed & Insured</span>
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] ring-1 ring-white/[0.06] text-white/40 text-xs">
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-none bg-white/[0.04] ring-1 ring-white/[0.06] text-white/40 text-xs">
                   <CheckCircle size={14} weight="fill" className="text-gold-500/70" />
                   <span>ISO Certified</span>
                 </div>

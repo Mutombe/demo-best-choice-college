@@ -27,7 +27,7 @@ export const designTokens = {
 
 const siteData = {
   business: {
-    name: "Best Choice College",
+    name: "Best Choice College", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
     legalName: "Best Choice College (Pvt) Ltd",
     tagline: "Your Brightest Future Starts Here",
     description:
@@ -134,9 +134,9 @@ const siteData = {
   },
 
   homeTestimonials: [
-    { name: "Tinashe Banda", role: "Accounting Diploma Graduate", text: "Best Choice College changed my life. I came with zero accounting knowledge and left with an ICM diploma and a job offer from a top accounting firm. The lecturers genuinely care.", rating: 5 },
-    { name: "Nyasha Mlambo", role: "IT Certificate Graduate", text: "The practical approach to teaching is what sets this college apart. We did not just read about networking, we built networks in the lab. Employed within two weeks of graduating.", rating: 5 },
-    { name: "Chiedza Mapanga", role: "Business Management Student", text: "The evening classes are perfect for working professionals. The lecturers are experienced business people who bring real-world examples into every lesson. Worth every dollar.", rating: 5 },
+    { name: "Tinashe Banda", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face", role: "Accounting Diploma Graduate", text: "Best Choice College changed my life. I came with zero accounting knowledge and left with an ICM diploma and a job offer from a top accounting firm. The lecturers genuinely care.", rating: 5 },
+    { name: "Nyasha Mlambo", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face", role: "IT Certificate Graduate", text: "The practical approach to teaching is what sets this college apart. We did not just read about networking, we built networks in the lab. Employed within two weeks of graduating.", rating: 5 },
+    { name: "Chiedza Mapanga", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face", role: "Business Management Student", text: "The evening classes are perfect for working professionals. The lecturers are experienced business people who bring real-world examples into every lesson. Worth every dollar.", rating: 5 },
   ],
 
   about: {
@@ -163,10 +163,10 @@ const siteData = {
       { iconName: "Heart", title: "Student-Centric", desc: "Our students are individuals with unique goals, and we tailor our support accordingly." },
     ],
     team: [
-      { name: "Mr. Tafadzwa Chiwanda", role: "College Principal", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" },
-      { name: "Mrs. Rumbidzai Moyo", role: "Academic Dean", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" },
-      { name: "Mr. Blessing Ncube", role: "Head of IT Department", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" },
-      { name: "Ms. Tendai Mhaka", role: "Student Affairs Manager", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400" },
+      { name: "Mr. Tafadzwa Chiwanda", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face", role: "College Principal", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" },
+      { name: "Mrs. Rumbidzai Moyo", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face", role: "Academic Dean", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" },
+      { name: "Mr. Blessing Ncube", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face", role: "Head of IT Department", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" },
+      { name: "Ms. Tendai Mhaka", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face", role: "Student Affairs Manager", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400" },
     ],
     milestones: [
       { year: "2012", title: "College Founded", desc: "Best Choice College opens with 3 programmes and a mission to transform vocational education." },
@@ -215,23 +215,23 @@ const siteData = {
     heroSubtitle: "Real feedback from real students. Our 4.8-star rating represents thousands of lives transformed.",
     ratingBreakdown: [{ stars: 5, count: 9 }, { stars: 4, count: 3 }, { stars: 3, count: 1 }, { stars: 2, count: 0 }, { stars: 1, count: 0 }],
     items: [
-      { name: "Tinashe Banda", role: "Accounting Graduate", text: "Best Choice College changed my life. I came with zero accounting knowledge and left with an ICM diploma and a job offer.", rating: 5, date: "2024-09-10", project: "Accounting Diploma" },
-      { name: "Nyasha Mlambo", role: "IT Graduate", text: "We did not just read about networking, we built networks in the lab. Employed within two weeks of graduating.", rating: 5, date: "2024-08-22", project: "IT Certificate" },
-      { name: "Chiedza Mapanga", role: "Business Student", text: "Evening classes perfect for working professionals. Lecturers bring real-world examples into every lesson.", rating: 5, date: "2024-07-15", project: "Business Management" },
-      { name: "Takudzwa Chirume", role: "Marketing Graduate", text: "I learned more about digital marketing in 6 months here than in 3 years of self-study.", rating: 5, date: "2024-06-18", project: "Marketing Diploma" },
-      { name: "Ruvimbo Chikore", role: "Secretarial Graduate", text: "My typing speed went from 20 to 65 words per minute. The office management training gave me confidence.", rating: 4, date: "2024-05-20", project: "Secretarial Studies" },
-      { name: "Farai Mutenha", role: "Health Sciences Student", text: "The nursing aide programme is hands-on. Clinical placements at real hospitals gave me confidence in patient care.", rating: 5, date: "2024-04-12", project: "Nursing Aide" },
-      { name: "Memory Gava", role: "Accounting Student", text: "The Pastel and QuickBooks training is invaluable. Most colleges only teach theory, but Best Choice teaches the software employers require.", rating: 5, date: "2024-03-08", project: "Accounting Certificate" },
-      { name: "Kudzai Dhliwayo", role: "IT Graduate", text: "I passed my CompTIA A+ on the first attempt. The lab facilities are among the best in Harare.", rating: 4, date: "2024-02-15", project: "IT Diploma" },
-      { name: "Tsitsi Chitauro", role: "Business Graduate", text: "The lecturers know your name, follow up on your progress, and the career services team actually helps you find work.", rating: 5, date: "2024-01-22", project: "Business Management" },
-      { name: "Tonderai Mupfupi", role: "Marketing Student", text: "The social media marketing module alone was worth the entire course fee. I now manage social media for three businesses.", rating: 5, date: "2023-12-10", project: "Marketing Certificate" },
-      { name: "Grace Hungwe", role: "Secretarial Graduate", text: "I was unemployed for two years before enrolling. Within three months of graduating, I was working as an executive PA.", rating: 5, date: "2023-11-05", project: "Executive PA Programme" },
-      { name: "Simba Choto", role: "Accounting Graduate", text: "The lecturers are not just teachers, they are mentors. Forever grateful for the extra help with tax computations.", rating: 4, date: "2023-10-18", project: "Accounting Diploma" },
-      { name: "Vimbai Makoni", role: "Health Sciences Graduate", text: "The pharmacy technician programme opened doors I never thought possible. Now working at a leading pharmaceutical company.", rating: 5, date: "2023-09-28", project: "Pharmacy Technician" },
-      { name: "Tatenda Gomo", role: "IT Student", text: "HTML, CSS, JavaScript, PHP, all taught with real projects. I built a portfolio that landed my first freelance client.", rating: 5, date: "2023-08-14", project: "Web Development" },
-      { name: "Patience Mukwena", role: "Business Student", text: "Affordable without compromising quality. The payment plans made it possible to study without financial stress.", rating: 4, date: "2023-07-22", project: "Business Administration" },
-      { name: "Anesu Dube", role: "Accounting Graduate", text: "Three years after graduating, I am now a finance manager. The practical skills I learned still serve me every day.", rating: 5, date: "2023-06-30", project: "Advanced Accounting" },
-      { name: "Blessing Zhakata", role: "IT Graduate", text: "The Cisco networking training was exceptional. Real routers, real switches, and lecturers from the industry.", rating: 5, date: "2023-05-15", project: "Networking Certificate" },
+      { name: "Tinashe Banda", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face", role: "Accounting Graduate", text: "Best Choice College changed my life. I came with zero accounting knowledge and left with an ICM diploma and a job offer.", rating: 5, date: "2024-09-10", project: "Accounting Diploma" },
+      { name: "Nyasha Mlambo", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=face", role: "IT Graduate", text: "We did not just read about networking, we built networks in the lab. Employed within two weeks of graduating.", rating: 5, date: "2024-08-22", project: "IT Certificate" },
+      { name: "Chiedza Mapanga", image: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?w=100&h=100&fit=crop&crop=face", role: "Business Student", text: "Evening classes perfect for working professionals. Lecturers bring real-world examples into every lesson.", rating: 5, date: "2024-07-15", project: "Business Management" },
+      { name: "Takudzwa Chirume", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face", role: "Marketing Graduate", text: "I learned more about digital marketing in 6 months here than in 3 years of self-study.", rating: 5, date: "2024-06-18", project: "Marketing Diploma" },
+      { name: "Ruvimbo Chikore", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&h=100&fit=crop&crop=face", role: "Secretarial Graduate", text: "My typing speed went from 20 to 65 words per minute. The office management training gave me confidence.", rating: 4, date: "2024-05-20", project: "Secretarial Studies" },
+      { name: "Farai Mutenha", image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&h=100&fit=crop&crop=face", role: "Health Sciences Student", text: "The nursing aide programme is hands-on. Clinical placements at real hospitals gave me confidence in patient care.", rating: 5, date: "2024-04-12", project: "Nursing Aide" },
+      { name: "Memory Gava", image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&h=100&fit=crop&crop=face", role: "Accounting Student", text: "The Pastel and QuickBooks training is invaluable. Most colleges only teach theory, but Best Choice teaches the software employers require.", rating: 5, date: "2024-03-08", project: "Accounting Certificate" },
+      { name: "Kudzai Dhliwayo", image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&h=100&fit=crop&crop=face", role: "IT Graduate", text: "I passed my CompTIA A+ on the first attempt. The lab facilities are among the best in Harare.", rating: 4, date: "2024-02-15", project: "IT Diploma" },
+      { name: "Tsitsi Chitauro", image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=100&h=100&fit=crop&crop=face", role: "Business Graduate", text: "The lecturers know your name, follow up on your progress, and the career services team actually helps you find work.", rating: 5, date: "2024-01-22", project: "Business Management" },
+      { name: "Tonderai Mupfupi", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face", role: "Marketing Student", text: "The social media marketing module alone was worth the entire course fee. I now manage social media for three businesses.", rating: 5, date: "2023-12-10", project: "Marketing Certificate" },
+      { name: "Grace Hungwe", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face", role: "Secretarial Graduate", text: "I was unemployed for two years before enrolling. Within three months of graduating, I was working as an executive PA.", rating: 5, date: "2023-11-05", project: "Executive PA Programme" },
+      { name: "Simba Choto", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face", role: "Accounting Graduate", text: "The lecturers are not just teachers, they are mentors. Forever grateful for the extra help with tax computations.", rating: 4, date: "2023-10-18", project: "Accounting Diploma" },
+      { name: "Vimbai Makoni", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face", role: "Health Sciences Graduate", text: "The pharmacy technician programme opened doors I never thought possible. Now working at a leading pharmaceutical company.", rating: 5, date: "2023-09-28", project: "Pharmacy Technician" },
+      { name: "Tatenda Gomo", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face", role: "IT Student", text: "HTML, CSS, JavaScript, PHP, all taught with real projects. I built a portfolio that landed my first freelance client.", rating: 5, date: "2023-08-14", project: "Web Development" },
+      { name: "Patience Mukwena", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face", role: "Business Student", text: "Affordable without compromising quality. The payment plans made it possible to study without financial stress.", rating: 4, date: "2023-07-22", project: "Business Administration" },
+      { name: "Anesu Dube", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face", role: "Accounting Graduate", text: "Three years after graduating, I am now a finance manager. The practical skills I learned still serve me every day.", rating: 5, date: "2023-06-30", project: "Advanced Accounting" },
+      { name: "Blessing Zhakata", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face", role: "IT Graduate", text: "The Cisco networking training was exceptional. Real routers, real switches, and lecturers from the industry.", rating: 5, date: "2023-05-15", project: "Networking Certificate" },
     ],
     ctaTitle: "Experience the Best Choice Difference",
     ctaSubtitle: "Join thousands of students who made the best choice for their careers.",
